@@ -10,6 +10,20 @@
   <name>maven2</name>
   <url>http://maven.apache.org</url>
 
+  
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>user-PC-releases</name>
+        <url>http://192.168.174.132:8081/artifactory/jfrogLocal</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>user-PC-snapshots</name>
+        <url>http://192.168.174.132:8081/artifactory/jfrogLocal</url>
+    </snapshotRepository>
+</distributionManagement>
+  
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
